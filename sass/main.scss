@@ -1,0 +1,168 @@
+
+@import "variables";
+@import "placeholders";
+
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    font-family:'Source Sans Pro', sans-serif;
+}
+
+body {
+    background-image: url("../img/fondo.png");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: $Blanco;
+
+    .contenedor_header {
+
+    height: 400px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+      
+
+        .grooba {
+            margin: 20px 0px;
+
+            .motion_grooba {
+                @extend %TituloPrincipal;
+
+                animation-name: efecto_grooba;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+                animation-duration: 2s;
+
+                @keyframes efecto_grooba {
+                    0% {color: #e85128}
+                    50% {color: #f7941d;}
+                    100% {color: #e85128}
+                }
+            }
+
+            .slogan {
+                @extend %Slogan
+            }
+
+            .contenedor-boton {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-content: center;
+                margin-top: 20px;
+
+                .boton_trabajos:hover{
+                    color: $Morado;
+                    }
+
+                .boton_trabajos {
+                    border: 1px solid;
+                    color: $Naranjo;
+                    padding: 10px 15px;
+                    background: hsl(120, 24%, 96%, 50%);
+                    transition: 1s;
+                    }
+            }
+        }
+    }
+
+    .estructura_home {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        .integrantes {
+            display: grid;
+            grid-template-columns: 30% 40% 30%;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            margin-bottom: 50px;
+
+            .portada {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 20px 20px 80px 20px;
+
+                .nombre_home {
+                    display: inline-block;
+                    margin: 20px 0px 10px 0px;
+                    font-weight: 400;
+                    font-size: 1.2rem;
+                    text-align: center;
+                    transition: 1s;
+
+                    .color_apodo {
+                        color: $Naranjo;
+                    }
+                }
+                
+                .nombre_home:hover {
+                    color: $Naranjo;
+                }
+
+            }
+        }
+    }
+
+    .galeria {
+        padding-top: 3%;
+        padding-bottom: 50px;
+        background: hsl(120, 24%, 96%, 50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .slogan {
+            @extend %Slogan
+        }
+
+        .img_home {
+            margin-top:2%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1200px;
+            
+            .imgh{
+                margin: 4px 6px;
+                transition: 1s;
+
+                .fondo_img_home {
+                    background: #a296c3;
+                }
+            }
+
+            .imgh:hover {
+                transform: scale(1.4);
+            }
+        }
+    }
+
+  
+}
+
+@import "_nav";
+
+@import "_footer";
+
+@import "_recomendados";
+
+@import "_contacto";

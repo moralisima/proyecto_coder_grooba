@@ -1,0 +1,59 @@
+
+.contenedor_etc {
+    height: 20%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.etc {
+    h1 {
+        @extend %TituloPrincipal;
+    }
+
+    .slogan {
+        @extend %Slogan;
+    }
+
+    h2 {
+        @extend %TituloSecundario;
+    }
+}
+
+.estructura_etc {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 100px;
+
+    .grilla_etc {
+        display: grid;
+        grid-template-columns: 50% 50%; 
+        max-width: 1200px;
+        margin: 0px 0px 40px 0px;
+
+        .celda_etc {
+            @extend %Celda;
+
+            .titulo_etc {
+                @extend %TituloTerciario;
+                display: inline-block;
+                padding: 10px 5px;
+            }
+
+            .ancho_resumen {
+                @extend %ParrafoMediano;
+                @extend %Texto;
+            }
+
+            .boton_ver {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+
+                .ver{
+                    @extend %BotonChico;
+                }
+            }
+        }
+    }
+}

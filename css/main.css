@@ -1,0 +1,365 @@
+/** TEXTOS **/
+.contenedor_contacto .alguna_idea .slogan, .etc .slogan, body .galeria .slogan, body .contenedor_header .grooba .slogan {
+  color: #686058;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-weight: 700;
+  font-size: x-large;
+  letter-spacing: 2px;
+  padding: 10px;
+}
+
+.contenedor_contacto .alguna_idea h1, .etc h1, body .contenedor_header .grooba .motion_grooba {
+  color: #e85128;
+  letter-spacing: 3px;
+  font-size: 70px;
+  text-align: center;
+  font-weight: 700px;
+  padding: 20px 0px 10px 0px;
+}
+
+.etc h2 {
+  color: #5c3ecc;
+  letter-spacing: 1px;
+  padding: 30px;
+  text-align: center;
+}
+
+.estructura_etc .grilla_etc .celda_etc .titulo_etc {
+  color: #e85128;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+
+.estructura_etc .grilla_etc .celda_etc .ancho_resumen {
+  color: #443850;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.estructura_etc .grilla_etc .celda_etc .ancho_resumen {
+  max-width: 560px;
+  text-align: center;
+  padding: 20px 5px 8px 5px;
+}
+
+/** ESTRUCTURA **/
+.estructura_etc .grilla_etc .celda_etc {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  margin: 20px 10px;
+}
+
+/** BOTONES **/
+.estructura_etc .grilla_etc .celda_etc .boton_ver .ver {
+  font-size: 80%;
+  border: 1px solid;
+  color: #e85128;
+  padding: 8px 12px;
+  transition: 1s;
+}
+.estructura_etc .grilla_etc .celda_etc .boton_ver .ver:hover {
+  color: #5c3ecc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+body {
+  background-image: url("../img/fondo.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-color: #f2f7f2;
+}
+body .contenedor_header {
+  height: 400px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+body .contenedor_header .grooba {
+  margin: 20px 0px;
+}
+body .contenedor_header .grooba .motion_grooba {
+  animation-name: efecto_grooba;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-duration: 2s;
+}
+@keyframes efecto_grooba {
+  0% {
+    color: #e85128;
+  }
+  50% {
+    color: #f7941d;
+  }
+  100% {
+    color: #e85128;
+  }
+}
+body .contenedor_header .grooba .contenedor-boton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  margin-top: 20px;
+}
+body .contenedor_header .grooba .contenedor-boton .boton_trabajos:hover {
+  color: #5c3ecc;
+}
+body .contenedor_header .grooba .contenedor-boton .boton_trabajos {
+  border: 1px solid;
+  color: #e85128;
+  padding: 10px 15px;
+  background: rgba(242, 247, 242, 0.5);
+  transition: 1s;
+}
+body .estructura_home {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+body .estructura_home .integrantes {
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+body .estructura_home .integrantes .portada {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 20px 80px 20px;
+}
+body .estructura_home .integrantes .portada .nombre_home {
+  display: inline-block;
+  margin: 20px 0px 10px 0px;
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-align: center;
+  transition: 1s;
+}
+body .estructura_home .integrantes .portada .nombre_home .color_apodo {
+  color: #e85128;
+}
+body .estructura_home .integrantes .portada .nombre_home:hover {
+  color: #e85128;
+}
+body .galeria {
+  padding-top: 3%;
+  padding-bottom: 50px;
+  background: rgba(242, 247, 242, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .galeria .img_home {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+}
+body .galeria .img_home .imgh {
+  margin: 4px 6px;
+  transition: 1s;
+}
+body .galeria .img_home .imgh .fondo_img_home {
+  background: #a296c3;
+}
+body .galeria .img_home .imgh:hover {
+  transform: scale(1.4);
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+nav li {
+  display: inline-block;
+  padding: 20px;
+}
+nav a {
+  color: #5c3ecc;
+  border-bottom: solid #f2f7f2 1px;
+  transition: 1s;
+}
+nav a:hover {
+  border-bottom: solid #5c3ecc 2px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  background-color: #5c3ecc;
+  padding: 40px;
+}
+footer .icon {
+  margin: 10px;
+  transition: 1s;
+}
+footer .icon:hover {
+  transform: scale(0.8);
+}
+footer .texto_footer {
+  font-weight: 400;
+  font-size: large;
+  color: #f2f7f2;
+  position: relative;
+  left: 20px;
+}
+
+.contenedor_etc {
+  height: 20%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.estructura_etc {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 100px;
+}
+.estructura_etc .grilla_etc {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  max-width: 1200px;
+  margin: 0px 0px 40px 0px;
+}
+.estructura_etc .grilla_etc .celda_etc .titulo_etc {
+  display: inline-block;
+  padding: 10px 5px;
+}
+.estructura_etc .grilla_etc .celda_etc .boton_ver {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.contenedor_contacto {
+  height: 400px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.contenedor_formulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 100px;
+}
+.contenedor_formulario .formulario_contacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: top;
+  background: #e85128;
+  padding: 10%;
+  margin: 20px 30px;
+}
+.contenedor_formulario .formulario_contacto .input_fields {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 5%;
+}
+.contenedor_formulario .formulario_contacto .input_fields .celda_contacto {
+  width: 200px;
+  margin: 5px;
+  transition: 1s;
+  background: transparent;
+  padding: 10px 10px 10px 0px;
+  border: none;
+  color: #f2f7f2;
+  border-bottom: 2px solid;
+}
+.contenedor_formulario .formulario_contacto .input_fields .celda_contacto:focus {
+  background: #f2f7f2;
+  color: #686058;
+}
+.contenedor_formulario .formulario_contacto .input_fields ::-webkit-input-placeholder {
+  color: #f2f7f2;
+  letter-spacing: 1.5px;
+  font-size: 14px;
+}
+.contenedor_formulario .formulario_contacto .input_fields ::-moz-input-placeholder {
+  color: #f2f7f2;
+  letter-spacing: 1.5px;
+  font-size: 14px;
+}
+.contenedor_formulario .formulario_contacto .input_fields ::-ms-input-placeholder {
+  color: #f2f7f2;
+  letter-spacing: 1.5px;
+  font-size: 14px;
+}
+.contenedor_formulario .formulario_contacto .mensaje .textarea {
+  width: 350px;
+  height: 175px;
+  background: transparent;
+  padding: 10px 10px 10px 0px;
+  border: none;
+  color: #f2f7f2;
+  border-bottom: 2px solid;
+}
+.contenedor_formulario .formulario_contacto .mensaje .textarea:focus {
+  background: #f2f7f2;
+  color: #686058;
+}
+.contenedor_formulario .formulario_contacto .mensaje ::-webkit-input-placeholder {
+  color: #f2f7f2;
+  letter-spacing: 1.5px;
+  font-size: 14px;
+}
+.contenedor_formulario .formulario_contacto .mensaje ::-moz-input-placeholder {
+  color: #f2f7f2;
+  letter-spacing: 1.5px;
+  font-size: 14px;
+}
+.contenedor_formulario .formulario_contacto .mensaje ::-ms-input-placeholder {
+  color: #f2f7f2;
+  letter-spacing: 1.5px;
+  font-size: 14px;
+}
+.contenedor_formulario .formulario_contacto .mensaje .boton_enviar button {
+  list-style: none;
+  border: none;
+  background: #f2f7f2;
+  padding: 5px;
+  color: #5c3ecc;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: 10px 0px;
+  transition: all 1s;
+}
+.contenedor_formulario .formulario_contacto .mensaje .boton_enviar button:hover {
+  color: #f2f7f2;
+  background: #5c3ecc;
+}

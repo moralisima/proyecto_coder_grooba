@@ -1,0 +1,75 @@
+
+/** TEXTOS **/
+
+%Slogan {
+    color: $Gris;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-weight: 700;
+    font-size: x-large;
+    letter-spacing: 2px;
+    padding: 10px;
+}
+
+%TituloPrincipal {
+    color: $Naranjo;
+    letter-spacing: 3px;
+    font-size: 70px;
+    text-align: center;
+    font-weight: 700px;
+    padding: 20px 0px 10px 0px;
+}
+
+%TituloSecundario {
+    color: #5c3ecc;
+    letter-spacing: 1px;
+    padding: 30px;
+    text-align: center;
+}
+
+%TituloTerciario {
+    color: $Naranjo;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+
+%Texto {
+    color: #443850;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+%ParrafoMediano {
+    max-width: 560px;
+    text-align: center;
+    padding: 20px 5px 8px 5px;
+}
+
+
+
+/** ESTRUCTURA **/
+
+%Celda {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    margin: 20px 10px;
+}
+
+
+/** BOTONES **/
+
+%BotonChico {
+    font-size: 80%;
+    border: 1px solid;
+    color: #e85128;
+    padding: 8px 12px;
+    transition: 1s;
+
+    &:hover {
+        color: #5c3ecc;
+    }
+}

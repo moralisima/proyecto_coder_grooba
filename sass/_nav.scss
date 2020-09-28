@@ -1,0 +1,22 @@
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    li {
+        display: inline-block;
+        padding: 20px;
+    }
+
+    a {
+        color: $Morado;
+        border-bottom: solid $Blanco 1px;
+        transition: 1s;
+    }
+
+    a:hover {
+        border-bottom: solid $Morado 2px;
+    }
+}

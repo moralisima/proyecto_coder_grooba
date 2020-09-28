@@ -1,0 +1,25 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    background-color: $Morado;
+    padding: 40px;
+
+        .icon {
+            margin: 10px;
+            transition: 1s;
+        }
+        
+        .icon:hover {
+            transform: scale(0.8);
+        }
+
+        .texto_footer {
+            font-weight: 400;
+            font-size: large;
+            color: $Blanco;
+            position: relative;
+            left: 20px;
+        }
+    }
