@@ -537,12 +537,13 @@ Animación
     border-radius: 50%;
 }
 
-#h1_trabajos {
+.h1_original {
+    font-family: 'Source Sans Pro', sans-serif;
     color: #e85128;
     letter-spacing: 3px;
     font-size: 70px;
     text-align: center;
-    font-weight: 700px;
+    font-weight: bold;
     padding: 20px 0px 10px 0px;
 }
 
@@ -557,6 +558,8 @@ Animación
 .estructura_trabajos {
     margin-bottom: 100px;
 }
+
+
 
 /* PORTAFOLIO */
 
